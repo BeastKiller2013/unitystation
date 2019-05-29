@@ -37,6 +37,11 @@ public class GasContainerEditor : Editor
 
 	public override void OnInspectorGUI()
 	{
+		container.tabBackgroundColor = EditorGUILayout.ColorField("Tab Background Color", container.tabBackgroundColor);
+		container.tabStripeColor = EditorGUILayout.ColorField("Tab Stripe Color", container.tabStripeColor);
+
+		EditorGUILayout.Space();
+
 		container.Opened = EditorGUILayout.Toggle("Opened", container.Opened);
 		container.ReleasePressure = EditorGUILayout.FloatField("Release Pressure", container.ReleasePressure);
 

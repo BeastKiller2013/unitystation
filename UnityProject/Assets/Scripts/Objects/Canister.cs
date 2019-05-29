@@ -1,7 +1,7 @@
 using Objects;
 using UnityEngine;
 
-public class Canister : InputTrigger
+public class Canister : NetworkTabTrigger
 {
 	public ObjectBehaviour objectBehaviour;
 	public GasContainer container;
@@ -58,10 +58,14 @@ public class Canister : InputTrigger
 			}
 		}
 
-		container.Opened = !container.Opened;
+		//container.Opened = !container.Opened;
 
+
+		base.Interact(originator, position, hand);
+		/*
 		string msg = container.Opened ? $"The valve is open, outputting at {container.ReleasePressure} kPa." : "The valve is closed.";
 		UpdateChatMessage.Send(originator, ChatChannel.Examine, msg);
+		*/
 
 		return true;
 	}

@@ -14,6 +14,9 @@ namespace Objects
 		public bool Opened;
 		public float ReleasePressure = 101.325f;
 
+		public Color tabBackgroundColor;
+		public Color tabStripeColor;
+
 		// Keeping a copy of these values for initialization and the editor
 		public float Volume;
 		public float Temperature;

@@ -139,7 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ae6b6bba5c4e3aa4780272577c9bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  container: {fileID: 0}
+  NetTabType: 7
+  objectBehaviour: {fileID: 114968618203004006}
+  container: {fileID: 114077126202047732}
   connectorRenderer: {fileID: 3039931327835793096}
   connectorSprite: {fileID: 21300022, guid: 73b44edfc9994ce4a7fb1bd22c556761, type: 3}
 --- !u!114 &114968618203004006
@@ -237,6 +239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Opened: 0
   ReleasePressure: 101.325
+  tabBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  tabStripeColor: {r: 1, g: 1, b: 0.07450981, a: 1}
   Volume: 1
   Temperature: 0
   Gases:
